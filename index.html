@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color contrast checker</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div id="aligner">
+            <div>
+                <h1>Color contrast checker</h1>
+
+                <div class="container" id="textContainer">
+                    <h2>This is the title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="container" id="controlsContainer">
+                    <div>
+                        <div>Large Text</div>
+                        <div>Normal Text</div>
+                    </div>
+
+                    <div>
+                        <div>AA</div>
+                        <div>AAA</div>
+                        <div>AA</div>
+                        <div>AAA</div>
+                    </div>
+
+                    <div>
+                        <div>Background color</div>
+                        <div>Foreground color</div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <input
+                                type="text"
+                                value="#FF0000"
+                                placeholder="Hex color, e.g. #FF0000"
+                                id="backgroundInput"
+                                data-ref="background"
+                            />
+                            <input
+                                type="color"
+                                data-ref="background"
+                                id="backgroundColorInput"
+                            />
+                        </div>
+                        <div>
+                            <input
+                                type="text"
+                                value="#FF0000"
+                                placeholder="Hex color, e.g. #FF0000"
+                                id="foregroundInput"
+                                data-ref="foreground"
+                            />
+                            <input
+                                type="color"
+                                data-ref="foreground"
+                                id="foregroundColorInput"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

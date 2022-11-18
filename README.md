@@ -1,1 +1,1 @@
-# -color-contrast-checker
+# Color contrast checker

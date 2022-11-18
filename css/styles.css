@@ -1,0 +1,122 @@
+@import url(./reset.css);
+
+:root {
+    --mainBackgroundColor: #262626;
+    --blocksBackgroundColor: #353535;
+    --contentSize: 460px;
+    --gap: 18px;
+    --borderRadius: 4px;
+    --successColor: #04aa6d;
+    --errorColor: #df4133;
+    --boxShadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+    --textShadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    --borderColor: #202020;
+}
+
+*:not(input) {
+    user-select: none;
+}
+
+input::placeholder,
+input:-ms-input-placeholder,
+input::-ms-input-placeholder {
+    opacity: 0.2;
+}
+
+body {
+    background-color: var(--mainBackgroundColor);
+    font-family: "M PLUS Code Latin", sans-serif;
+    color: white;
+}
+
+#aligner {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    padding: 14px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: var(--gap);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 42px;
+    text-shadow: var(--textShadow);
+}
+
+#aligner > div {
+    max-width: var(--contentSize);
+    width: 100%;
+}
+
+.container {
+    /* padding: 12px 16px; */
+    background-color: var(--blocksBackgroundColor);
+    margin-bottom: var(--gap);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+}
+
+#textContainer {
+    min-height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 80px;
+
+    /* background-color: red; */
+}
+
+#textContainer h2 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#textContainer p {
+    margin: 0;
+}
+
+#controlsContainer > div {
+    display: grid;
+    text-align: center;
+}
+
+#controlsContainer > div div {
+    padding: 14px 10px;
+}
+
+#controlsContainer > div + div {
+    border-top: 1px solid var(--borderColor);
+}
+
+#controlsContainer > div div + div {
+    border-left: 1px solid var(--borderColor);
+}
+
+#controlsContainer > div:nth-child(1),
+#controlsContainer > div:nth-child(3),
+#controlsContainer > div:nth-child(4) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#controlsContainer > div:nth-child(2) {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#controlsContainer > div:nth-child(4) div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#controlsContainer input[type="color"] {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: var(--borderRadius);
+}
