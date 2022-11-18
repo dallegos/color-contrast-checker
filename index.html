@@ -32,10 +32,10 @@
                     </div>
 
                     <div>
-                        <div>AA</div>
-                        <div>AAA</div>
-                        <div>AA</div>
-                        <div>AAA</div>
+                        <div class="valid" id="aaLarge">AA</div>
+                        <div class="valid" id="aaaLarge">AAA</div>
+                        <div class="valid" id="aaNormal">AA</div>
+                        <div class="valid" id="aaaNormal">AAA</div>
                     </div>
 
                     <div>
@@ -47,12 +47,13 @@
                         <div>
                             <input
                                 type="text"
-                                value="#FF0000"
+                                value="#353535"
                                 placeholder="Hex color, e.g. #FF0000"
                                 id="backgroundInput"
                                 data-ref="background"
                             />
                             <input
+                                value="#353535"
                                 type="color"
                                 data-ref="background"
                                 id="backgroundColorInput"
@@ -61,12 +62,13 @@
                         <div>
                             <input
                                 type="text"
-                                value="#FF0000"
+                                value="#FFFFFF"
                                 placeholder="Hex color, e.g. #FF0000"
                                 id="foregroundInput"
                                 data-ref="foreground"
                             />
                             <input
+                                value="#FFFFFF"
                                 type="color"
                                 data-ref="foreground"
                                 id="foregroundColorInput"
@@ -77,6 +79,6 @@
             </div>
         </div>
 
-        <script src="js/script.js"></script>
+        <script src="js/script.js" type="module"></script>
     </body>
 </html>
