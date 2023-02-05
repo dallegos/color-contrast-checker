@@ -2,6 +2,9 @@
 
 :root {
     --mainBackgroundColor: #262626;
+    --mainFont: "M PLUS Code Latin", sans-serif;
+    --mainFontColor: white;
+
     --blocksBackgroundColor: #353535;
     --contentSize: 460px;
     --gap: 18px;
@@ -11,6 +14,15 @@
     --boxShadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
     --textShadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
     --borderColor: #202020;
+
+    --contentYPadding: 12px;
+    --contentXPadding: 16px;
+
+    --headingFontSize: 1.3rem;
+    --headingGap: 42px;
+    --headingColor: white;
+
+    --colorInputSize: 24px;
 }
 
 *:not(input) {
@@ -25,8 +37,8 @@ input::-ms-input-placeholder {
 
 body {
     background-color: var(--mainBackgroundColor);
-    font-family: "M PLUS Code Latin", sans-serif;
-    color: white;
+    font-family: var(--mainFont);
+    color: var(--mainFontColor);
 }
 
 #aligner {
@@ -34,15 +46,15 @@ body {
     justify-content: center;
     min-height: 100vh;
     align-items: center;
-    padding: 14px;
+    padding: var(--contentYPadding);
 }
 
 h1 {
     text-align: center;
     margin-bottom: var(--gap);
-    font-size: 1.3rem;
+    font-size: var(--headingFontSize);
     font-weight: 600;
-    margin-bottom: 42px;
+    margin-bottom: var(--headingGap);
     text-shadow: var(--textShadow);
 }
 
@@ -52,7 +64,6 @@ h1 {
 }
 
 .container {
-    /* padding: 12px 16px; */
     background-color: var(--blocksBackgroundColor);
     margin-bottom: var(--gap);
     border-radius: var(--borderRadius);
@@ -65,7 +76,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 80px;
+    padding: 5vh 5vw;
 }
 
 #textContainer h2 {
@@ -125,8 +136,8 @@ h1 {
 }
 
 #controlsContainer input[type="color"] {
-    width: 24px;
-    height: 24px;
+    width: var(--colorInputSize);
+    height: var(--colorInputSize);
     cursor: pointer;
     border-radius: var(--borderRadius);
 }
